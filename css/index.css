@@ -1,11 +1,11 @@
 :root {
   --app-height: 100%;
-  --k1: #EF6079;
-  --k2: linear-gradient(0deg, rgba(239, 96, 121, 0.25), rgba(239, 96, 121, 0.25)), white;
-  --c1: #EF6079;
-  --c2: #F3CBC7;
-  --c3: #5CB8B2;
-  --c4: #333F48;
+  --k1: #FEB435;
+  --k2: linear-gradient(0deg, rgba(254, 180, 53, 0.25), rgba(254, 180, 53, 0.25)), white;
+  --c1: #FEB435;
+  --c2: #FFECCD;
+  --c3: #2DB5FB;
+  --c4: #595757;
   --cG1: #333333;
   --cG2: #4F4F4F;
   --cG3: #828282;
@@ -16,7 +16,7 @@
   --cRed: #EB5757;
   --cGreen: #27AE60;
   --cOrange: #FF9900;
-  --cBlue: #5CB8B2;
+  --cBlue: #2DB5FB;
   --fXXL: 1.6rem;
   --fXL: 1.4rem;
   --fL: 1.2rem;
@@ -52,7 +52,7 @@ span {
   /* height: 100vh; height: var(--app-height); */
   display: flex;
   flex-direction: column;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #EF6079;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #FEB435;
   /* background: url(../img/bg.png); */
   background-position: center;
   background-attachment: fixed;
@@ -343,7 +343,7 @@ span {
   align-items: center;
   z-index: 6;
   position: fixed;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #EF6079;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #FEB435;
   /* background: url(../img/bg.png); */
   background-position: top;
   background-attachment: fixed;
@@ -391,7 +391,7 @@ span {
   bottom: 0;
   z-index: 6x;
   position: fixed;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), #EF6079;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), #FEB435;
   /* background: url(../img/bg.png); */
   background-position: bottom;
   background-attachment: fixed;

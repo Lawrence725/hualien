@@ -10,7 +10,7 @@
   background: url(../img/bg.png);
   background-size: cover;
   background-position: center top;
-  box-shadow: 0px 10px 20px rgba(239, 96, 121, 0.1);
+  box-shadow: 0px 10px 20px rgba(254, 180, 53, 0.1);
 }
 .body .header.v2 i,
 .body .header.v2 svg,
@@ -107,7 +107,7 @@
   border-radius: 0;
   display: none;
   position: absolute;
-  background: linear-gradient(135deg, rgba(239, 96, 121, 0.5) 0%, #EF6079 100%), #FFFFFF;
+  background: linear-gradient(135deg, rgba(254, 180, 53, 0.5) 0%, #FEB435 100%), #FFFFFF;
   z-index: 9;
 }
 @media (max-height: 767px) and (min-width: 568px) and (max-width: 1080px) and (orientation: landscape) {
@@ -344,7 +344,7 @@
   padding: 0 !important;
   align-items: center;
   justify-content: space-around;
-  background: linear-gradient(135deg, rgba(239, 96, 121, 0.5) 0%, var(--c1) 100%), #FFFFFF;
+  background: linear-gradient(135deg, rgba(254, 180, 53, 0.5) 0%, var(--c1) 100%), #FFFFFF;
 }
 .body .landing .img {
   width: 200px;
@@ -369,7 +369,7 @@
   padding: 50px 0 !important;
   align-items: center;
   justify-content: space-around;
-  background: linear-gradient(135deg, rgba(239, 96, 121, 0.5) 0%, var(--c1) 100%), #FFFFFF;
+  background: linear-gradient(135deg, rgba(254, 180, 53, 0.5) 0%, var(--c1) 100%), #FFFFFF;
 }
 .body .errors.main .img {
   width: 150px;
@@ -615,7 +615,7 @@
   border: 1px solid var(--c1);
   border-radius: 20px;
   backdrop-filter: blur(30px);
-  background: radial-gradient(100% 445.79% at 100% 100%, rgba(239, 96, 121, 0.5) 0%, rgba(255, 255, 255, 0.5) 50.65%, rgba(255, 255, 255, 0.8) 100%);
+  background: radial-gradient(100% 445.79% at 100% 100%, rgba(254, 180, 53, 0.5) 0%, rgba(255, 255, 255, 0.5) 50.65%, rgba(255, 255, 255, 0.8) 100%);
 }
 .body .index .point .img {
   width: 50px;
@@ -906,7 +906,7 @@
 }
 .body .service .top .flexV.receipt {
   background-color: var(--c1);
-  box-shadow: 0px 5px 10px rgba(239, 96, 121, 0.2);
+  box-shadow: 0px 5px 10px rgba(254, 180, 53, 0.2);
 }
 @supports (-webkit-touch-callout: none) and (not (translate: none)) {
   .body .service .top .flexV.receipt {
@@ -964,7 +964,7 @@
 }
 .body .service .function > .flexH {
   margin-bottom: 20px;
-  border: 1px solid #EF6079;
+  border: 1px solid #FEB435;
   overflow: hidden;
   backdrop-filter: blur(30px);
   border-radius: 15px;
@@ -1428,7 +1428,7 @@
   gap: 10px;
   background-color: white;
   box-sizing: border-box;
-  box-shadow: 0px 10px 20px rgba(239, 96, 121, 0.2);
+  box-shadow: 0px 10px 20px rgba(254, 180, 53, 0.2);
 }
 @supports (-webkit-touch-callout: none) and (not (translate: none)) {
   .body .profile .tag > *:not(:last-child) {
@@ -1568,7 +1568,7 @@
   position: absolute;
 }
 .body .profile .card .img.city {
-  background: linear-gradient(135deg, rgba(239, 96, 121, 0.5) 0%, var(--c1) 100%), #FFFFFF;
+  background: linear-gradient(135deg, rgba(254, 180, 53, 0.5) 0%, var(--c1) 100%), #FFFFFF;
 }
 .body .profile .card .img.city .icon.iconVisit {
   display: none;
@@ -1649,7 +1649,7 @@
   border: 1px solid var(--c1);
   border-radius: 20px;
   backdrop-filter: blur(30px);
-  background: radial-gradient(100% 445.79% at 100% 100%, rgba(239, 96, 121, 0.5) 0%, rgba(255, 255, 255, 0.5) 50.65%, rgba(255, 255, 255, 0.8) 100%);
+  background: radial-gradient(100% 445.79% at 100% 100%, rgba(254, 180, 53, 0.5) 0%, rgba(255, 255, 255, 0.5) 50.65%, rgba(255, 255, 255, 0.8) 100%);
 }
 .body .profile .point .img {
   width: 50px;
@@ -2552,7 +2552,7 @@
   left: 0;
   position: absolute;
   backdrop-filter: blur(2px);
-  background: linear-gradient(104.62deg, rgba(239, 96, 121, 0.8) 0%, rgba(239, 96, 121, 0.5) 100%);
+  background: linear-gradient(104.62deg, rgba(254, 180, 53, 0.8) 0%, rgba(254, 180, 53, 0.5) 100%);
   z-index: 2;
 }
 .body .ticket_scan.main .item .itemT .cover .done {
@@ -3333,7 +3333,7 @@
   height: 80px;
   border-radius: 20px;
   position: absolute;
-  background: linear-gradient(104.62deg, rgba(239, 96, 121, 0.8) 0%, rgba(239, 96, 121, 0.5) 100%);
+  background: linear-gradient(104.62deg, rgba(254, 180, 53, 0.8) 0%, rgba(254, 180, 53, 0.5) 100%);
   border: 1px solid var(--c1);
   backdrop-filter: blur(2px);
 }
@@ -3456,7 +3456,7 @@
   height: 80px;
   border-radius: 20px;
   position: absolute;
-  background: linear-gradient(104.62deg, rgba(239, 96, 121, 0.8) 0%, rgba(239, 96, 121, 0.5) 100%);
+  background: linear-gradient(104.62deg, rgba(254, 180, 53, 0.8) 0%, rgba(254, 180, 53, 0.5) 100%);
   border: 1px solid var(--c1);
   backdrop-filter: blur(2px);
 }
@@ -3708,7 +3708,7 @@
 }
 .body .ipass_get.main .flexV span {
   font-size: 14px;
-  color: #333F48;
+  color: #595757;
 }
 .body .ipass_get.main .Note {
   width: 100%;
@@ -3721,7 +3721,7 @@
   font-weight: bold;
 }
 .body .ipass_get.main .Note a {
-  color: #EF6079;
+  color: #FEB435;
   text-decoration: underline !important;
 }
 .body .ipass_get.main .Note a:hover {

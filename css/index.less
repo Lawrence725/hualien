@@ -1,4 +1,4 @@
-@color: #EF6079;
+@color: #FEB435;
 
 // Screen Size
 @sD:    (min-width: 1024px);                            // Desktop
@@ -13,10 +13,10 @@
     // CSS Color
     --k1:       @color;
     --k2:       linear-gradient(0deg, fade(@color, 25%), fade(@color, 25%)), white;
-    --c1:       #EF6079;
-    --c2:       #F3CBC7;
-    --c3:       #5CB8B2;
-    --c4:       #333F48;
+    --c1:       #FEB435;
+    --c2:       #FFECCD;
+    --c3:       #2DB5FB;
+    --c4:       #595757;
     --cG1:      #333333;
     --cG2:      #4F4F4F;
     --cG3:      #828282;
@@ -27,7 +27,7 @@
     --cRed:     #EB5757;
     --cGreen:   #27AE60;
     --cOrange:  #FF9900;
-    --cBlue:    #5CB8B2;
+    --cBlue:    #2DB5FB;
 
     // Font Size
     // font-size: 12px;
@@ -41,7 +41,7 @@
 
 html, body, .marginX { width: 100vw; /* height: 100vh; height: var(--app-height); */ padding: 0 !important; margin: 0 !important; /* overflow: hidden; */ }
 body, h1, h2, h3, h4, h5, h6, p, select, input, textarea, button, span { font-family: 'Noto Sans TC', 'Arial', '微軟正黑體', '新細明體', 'sans-serif'; }
-.body { /* height: 100vh; height: var(--app-height); */ display: flex; flex-direction: column; background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #EF6079; /* background: url(../img/bg.png); */ background-position: center; background-attachment: fixed; background-size: cover;
+.body { /* height: 100vh; height: var(--app-height); */ display: flex; flex-direction: column; background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #FEB435; /* background: url(../img/bg.png); */ background-position: center; background-attachment: fixed; background-size: cover;
 
     // Color
     .primary    { color: var(--c1) !important; }
@@ -122,7 +122,7 @@ body, h1, h2, h3, h4, h5, h6, p, select, input, textarea, button, span { font-fa
             .feature { width: 20px; top: -5%; left: 15%; position: absolute; }}}
     @media @sD, @sT { .header, .main, .footer { width: calc(100% - 100px); margin: 0 40px; }}
     &.fixed {
-        .header { height: 60px; padding: 0 10px; display: flex; align-items: center; z-index: 6; position: fixed; background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #EF6079; /* background: url(../img/bg.png); */ background-position: top; background-attachment: fixed; background-size: cover;
+        .header { height: 60px; padding: 0 10px; display: flex; align-items: center; z-index: 6; position: fixed; background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #FEB435; /* background: url(../img/bg.png); */ background-position: top; background-attachment: fixed; background-size: cover;
             > img { width: unset; height: 34px; }
             > span { margin: 5px; white-space: nowrap; }
             .left, .right { width: 100%; display: flex; align-items: center; gap: 2px;
@@ -131,7 +131,7 @@ body, h1, h2, h3, h4, h5, h6, p, select, input, textarea, button, span { font-fa
             .left span { font-size: var(--fL); }
             .right { justify-content: flex-end; gap: 10px; }}
         .main   { padding: 60px 10px 90px; }
-        .footer { height: 70px; padding: 0 10px; border-radius: 20px 20px 0 0; bottom: 0; z-index: 6x; position: fixed; background: linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), #EF6079; /* background: url(../img/bg.png); */ background-position: bottom; background-attachment: fixed; background-size: cover; box-shadow: 0px -10px 20px rgba(55, 84, 170, 0.1); }}
+        .footer { height: 70px; padding: 0 10px; border-radius: 20px 20px 0 0; bottom: 0; z-index: 6x; position: fixed; background: linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), #FEB435; /* background: url(../img/bg.png); */ background-position: bottom; background-attachment: fixed; background-size: cover; box-shadow: 0px -10px 20px rgba(55, 84, 170, 0.1); }}
     &.mobile { @media @sD, @sT { .header, .main, .footer { width: 748px; margin-left: calc(50vw - 384px); margin-right: calc(50vw - 384px); }}}
     .absoluteC { top: 50%; left: 50%; position: absolute; transform: translate(-50%, -50%); }
     .flexH  { width: fit-content; border-radius: 10px; display: flex; align-items: center; }
