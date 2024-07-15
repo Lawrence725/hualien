@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="桃園紅利桃子">
+        <meta name="description" content="桃園紅利桃子">
+        <meta name="author" content="桃園紅利桃子">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <title>桃園紅利桃子</title>
+        <link rel="icon" type="image/png" href="img/logo.png"/>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/unique.css">
+        <!-- Awesome Icon -->
+        <link href="fontawesome-free-6.1.1-web/css/all.css" rel="stylesheet">
+    </head>
+    <body class="marginX">
+        <div class="body fixed mobile"> <!-- class: fixed, mobile -->
+            <!-- Loading Spinner -->
+            <!-- <div class="spinner"><div><div></div></div></div> -->
+            <!-- Header -->
+            <section class="header point_code">
+                <a class="icon iconButton third" href="point_send.html">
+                    <i class="fa-solid fa-chevron-left fa-lg"></i>
+                </a>
+                <span class="fL">店家名稱</span>
+                <div class="icon iconButton"></div>
+            </section>
+            <!-- Main -->
+            <section class="main point_code">
+                <div class="info flexV width">
+                    <div class="content flexV width center">
+                        <span class="fM gray">您即將支付</span>
+                        <div class="total flexH width rounded middle padding margin">
+                            <div class="img"><img src="icon/point.svg"></div>
+                            <span class="fXL">100</span>
+                        </div>
+                        <span class="fL">輸入交易密碼</span>
+                    </div>
+                    <div class="code flexH width middle">
+                        <div class="dot active"><div></div></div>
+                        <div class="dot active"><div></div></div>
+                        <div class="dot active"><div></div></div>
+                        <div class="dot"><div></div></div>
+                        <div class="dot"><div></div></div>
+                        <div class="dot"><div></div></div>
+                    </div>
+                    <div class="flexH width middle">
+                        <a class="fM gray" href="code_set.html">忘記密碼</a>
+                    </div>
+                    <div class="number flexV width">
+                        <div class="flexH width">
+                            <a class="flexH width middle margin background rounded">
+                                <span class="fXL">1</span>
+                            </a>
+                            <a class="flexH width middle margin background rounded">
+                                <span class="fXL">2</span>
+                            </a>
+                            <a class="flexH width middle margin background rounded">
+                                <span class="fXL">3</span>
+                            </a>
+                        </div>
+                        <div class="flexH width">
+                            <a class="flexH width middle margin background rounded">
+                                <span class="fXL">4</span>
+                            </a>
+                            <a class="flexH width middle margin background rounded">
+                                <span class="fXL">5</span>
+                            </a>
+                            <a class="flexH width middle margin background rounded">
+                                <span class="fXL">6</span>
+                            </a>
+                        </div>
+                        <div class="flexH width">
+                            <a class="flexH width middle margin background rounded">
+                                <span class="fXL">7</span>
+                            </a>
+                            <a class="flexH width middle margin background rounded">
+                                <span class="fXL">8</span>
+                            </a>
+                            <a class="flexH width middle margin background rounded" onclick="popNotice()"> <!-- Popup (餘額不足) -->
+                                <span class="fXL">9</span>
+                            </a>
+                        </div>
+                        <div class="flexH width">
+                            <a class="flexH width middle margin" onclick="popNone()">
+                                <span class="fM gray">清除</span>
+                            </a>
+                            <a class="flexH width middle margin background rounded" href="point_success.html">
+                                <span class="fXL">0</span>
+                            </a>
+                            <a class="flexH width middle margin" onclick="popWrong()">
+                                <i class="gray fa-solid fa-delete-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Popup (未設定交易密碼) -->
+            <section id="popNone" class="popup">
+                <div class="popBody">
+                    <section class="popMain">
+                        <div class="icon"><i class="fa-solid fa-triangle-exclamation fa-3x"></i></div>
+                        <span class="fL">未設定交易密碼</span>
+                    </section>
+                    <section class="popFooter">
+                        <a class="button rounded" href="code.html">
+                            <span class="fM">前往設定</span>
+                        </a>
+                    </section>
+                </div>
+            </section>
+            <!-- Popup (密碼錯誤) -->
+            <section id="popWrong" class="popup" onclick="popClose(this)">
+                <div class="popBody">
+                    <section class="popMain">
+                        <div class="icon"><i class="fa-solid fa-triangle-exclamation fa-3x"></i></div>
+                        <span class="fL">密碼錯誤</span>
+                    </section>
+                    <section class="popFooter">
+                        <a class="button rounded white" href="code_set.html">
+                            <span class="fM">忘記密碼</span>
+                        </a>
+                        <a class="button rounded" onclick="popClose(this)">
+                            <span class="fM">確定</span>
+                        </a>
+                    </section>
+                </div>
+            </section>
+        </div>
+        <!-- Script -->
+        <script>
+            // Popup close
+            function popClose(e) {
+                if (e.classList.contains('popup'))
+                    window.onclick  = function(event) {
+                        if (event.target == e)
+                            e.style.display = "none"; }
+                else if (!(e.classList.contains('popBody')))
+                    e.closest('.popup').style.display = "none";
+                document.body.style.overflow = "scroll"; }
+            // Popup (未設定交易密碼)
+            function popNone() {
+                document.getElementById("popNone").style.display = "flex";
+                document.body.style.overflow = "hidden"; }
+            // Popup (密碼錯誤)
+            function popWrong() {
+                document.getElementById("popWrong").style.display = "flex";
+                document.body.style.overflow = "hidden"; }
+        </script>
+    </body>
+</html>

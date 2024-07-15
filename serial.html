@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="桃園紅利桃子">
+        <meta name="description" content="桃園紅利桃子">
+        <meta name="author" content="桃園紅利桃子">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <title>桃園紅利桃子</title>
+        <link rel="icon" type="image/png" href="img/logo.png"/>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/unique.css">
+        <!-- Awesome Icon -->
+        <link href="fontawesome-free-6.1.1-web/css/all.css" rel="stylesheet">
+    </head>
+    <body class="marginX">
+        <div class="body fixed mobile"> <!-- class: fixed, mobile -->
+            <!-- Loading Spinner -->
+            <!-- <div class="spinner"><div><div></div></div></div> -->
+            <!-- Header -->
+            <section class="header serial">
+                <div class="flexH width">
+                    <a class="icon iconButton third" href="javascript:history.back()">
+                        <i class="fa-solid fa-chevron-left fa-lg"></i>
+                    </a>
+                </div>
+                <span class="fL nowrap">優惠序號</span>
+                <div class="flexH width right"></div>
+            </section>
+            <!-- Main -->
+            <section class="main serial">
+                <div class="info flexV width padding center gapM">
+                    <div class="input right rounded"> <!-- class: error -->
+                        <div class="icon"><i class="fas fa-ticket"></i></div>
+                        <span class="fM nowrap gray">優惠序號</span>
+                        <input type="text" class="fM width" placeholder="輸入序號" value="">
+                        <!-- <span class="fS error message">必填</span> -->
+                    </div>
+                    <ol class="fS gray">
+                        <li>輸入優惠序號即可獲得紅利桃子點數，成功兌換點數後，該序號就會失效，且無法更改、取消或回復。</li>
+                        <li>請於有效兌換期限前兌換完畢，若逾期則無法進行兌換。</li>
+                        <li>活動發放之優惠序號皆為不記名形式，獲得後請您妥善保管，若序號遺失、被他人盜用或逾期恕不補發。</li>
+                        <li>紅利桃子優惠序號獲得方式：參加並完成指定活動即可獲得，目前此序號於市面上暫無販售。</li>
+                        <li>本系統保留修改、變更規定及終止相關辦法之權利。</li>
+                    </ol>
+                    <a class="button rounded" onclick="popSuccess()">
+                        <span class="fM">兌換</span> <!-- 提交申請 -->
+                    </a>
+                </div>
+            </section>
+            <!-- Popup (載具綁定成功) -->
+            <section id="popSuccess" class="popup">
+                <div class="popBody">
+                    <section class="popHeader">
+                        <!-- <span class="fL">Title</span> -->
+                    </section>
+                    <section class="popMain">
+                        <div class="icon success"><i class="fa-regular fa-circle-check fa-2x"></i></div>
+                        <span class="fL">兌換成功</span>
+                    </section>
+                    <section class="popFooter">
+                        <a class="button submit rounded" href="profile.html">
+                            <span class="fM">確定</span>
+                        </a>
+                    </section>
+                </div>
+            </section>
+        </div>
+        <!-- Script -->
+        <script src="js/serial.js"></script>
+    </body>
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="桃園紅利桃子">
+        <meta name="description" content="桃園紅利桃子">
+        <meta name="author" content="桃園紅利桃子">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <title>桃園紅利桃子</title>
+        <link rel="icon" type="image/png" href="img/logo.png"/>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/unique.css">
+        <!-- Awesome Icon -->
+        <link href="fontawesome-free-6.1.1-web/css/all.css" rel="stylesheet">
+    </head>
+    <body class="marginX">
+        <div class="body fixed mobile"> <!-- class: fixed, mobile -->
+            <!-- Loading Spinner -->
+            <!-- <div class="spinner"><div><div></div></div></div> -->
+            <!-- Header -->
+            <section class="header point_history">
+                <a class="icon iconButton third" href="index.html">
+                    <i class="fa-solid fa-chevron-left fa-lg"></i>
+                </a>
+                <span class="fL">交易紀錄</span>
+                <div class="icon iconButton"></div>
+            </section>
+            <!-- Main -->
+            <section class="main point_history">
+                <!-- Tabs -->
+                <div class="tabs line fM rounded">
+                    <a class="tab flexV width center" href="point_receipt.html">
+                        <span class="fS">消費紀錄</span>
+                    </a>
+                    <div class="lineV"></div>
+                    <a class="tab flexV width center active" href="point_history.html">
+                        <span class="fS">點數紀錄</span>
+                        <!-- <div class="flexH">
+                            <div class="img"><img src="icon/point.svg"></div>
+                            <span class="fM bold">500</span>
+                        </div> -->
+                    </a>
+                    <div class="lineV"></div>
+                    <a class="tab flexV width center" href="point_date.html">
+                        <span class="fS">點數到期日</span>
+                        <!-- <div class="flexH">
+                            <div class="img"><img src="icon/point.svg"></div>
+                            <span class="fM bold">200</span>
+                        </div> -->
+                    </a>
+                </div>
+                <!-- Filter -->
+                <div class="filter flexH width">
+                    <a class="flexH width middle rounded" onclick="popTime()">
+                        <span class="fM">近一個月</span>
+                        <div class="icon third"><i class="fas fa-caret-down fa-xs"></i></div>
+                    </a>
+                    <div class="lineV"></div>
+                    <a class="flexH width middle rounded" onclick="popDropdown()">
+                        <span class="fM">全部類型</span>
+                        <div class="icon third"><i class="fas fa-caret-down fa-xs"></i></div>
+                    </a>
+                    <!-- <div class="flexH width middle">
+                        <div class="dropdown rounded">
+                            <select name="type" class="fM rounded">
+                                <option value="全部類型">全部類型</option>
+                                <option value="獲得點數">獲得點數</option>
+                                <option value="點數消費">點數消費</option>
+                            </select>
+                            <div class="arrow third"><i class="fas fa-caret-down fa-xs"></i></div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="lineV"></div>
+                    <div class="flexH width middle">
+                        <div class="dropdown rounded">
+                            <select name="type" class="fM rounded">
+                                <option value="新到舊">新到舊</option>
+                                <option value="舊到新">舊到新</option>
+                                <option value="點數大到小">點數大到小</option>
+                                <option value="點數小到大">點數小到大</option>
+                            </select>
+                            <div class="arrow third"><i class="fas fa-caret-down fa-xs"></i></div>
+                        </div>
+                    </div> -->
+                </div>
+                <!-- 紀錄 -->
+                <div class="records flexV width padding">
+                    <a class="record flexH width between margin" onclick="popDetail()">
+                        <div class="flexV width">
+                            <span class="fM">點數折抵</span>
+                            <span class="fS gray">快一點餐廳</span>
+                        </div>
+                        <div class="flexV end">
+                            <div class="flexH">
+                                <span class="fM bold error">-130</span>
+                                <!-- <div class="img"><img src="icon/point.svg"></div> -->
+                            </div>
+                            <span class="fS gray">2022/01/11</span>
+                        </div>
+                        <div class="icon minor"><i class="fa-solid fa-chevron-right"></i></div>
+                    </a>
+                    <div class="lineH"></div>
+                    <a class="record flexH width between margin" onclick="popDetail_event()">
+                        <div class="flexV width">
+                            <span class="fM">活動點數</span>
+                            <span class="fS gray">活動完成：2023/10月萬聖節店家限...</span>
+                        </div>
+                        <div class="flexV end">
+                            <div class="flexH">
+                                <span class="fM bold success">+130</span>
+                                <!-- <div class="img"><img src="icon/point.svg"></div> -->
+                            </div>
+                            <span class="fS gray end">2022/01/11</span>
+                        </div>
+                        <div class="icon minor"><i class="fa-solid fa-chevron-right"></i></div>
+                    </a>
+                    <div class="lineH"></div>
+                    <a class="record flexH width between margin" onclick="popDetail()">
+                        <div class="flexV width">
+                            <span class="fM">點數折抵</span>
+                            <span class="fS gray">快一點餐廳</span>
+                        </div>
+                        <div class="flexV end">
+                            <div class="flexH">
+                                <span class="fM bold error">-130</span>
+                                <!-- <div class="img"><img src="icon/point.svg"></div> -->
+                            </div>
+                            <span class="fS gray">2022/01/11</span>
+                        </div>
+                        <div class="icon minor"><i class="fa-solid fa-chevron-right"></i></div>
+                    </a>
+                    <div class="lineH"></div>
+                    <a class="record flexH width between margin" onclick="popDetail_event()">
+                        <div class="flexV width">
+                            <span class="fM">問答任務</span>
+                            <span class="fS gray">任務名稱</span>
+                        </div>
+                        <div class="flexV end">
+                            <div class="flexH">
+                                <span class="fM bold success">+130</span>
+                                <!-- <div class="img"><img src="icon/point.svg"></div> -->
+                            </div>
+                            <span class="fS gray">2022/01/11</span>
+                        </div>
+                        <div class="icon minor"><i class="fa-solid fa-chevron-right"></i></div>
+                    </a>
+                    <div class="lineH"></div>
+                    <a class="record flexH width between margin" onclick="popDetail()">
+                        <div class="flexV width">
+                            <span class="fM">點數折抵</span>
+                            <span class="fS gray">快一點餐廳</span>
+                        </div>
+                        <div class="flexV end">
+                            <div class="flexH">
+                                <span class="fM bold error">-130</span>
+                                <!-- <div class="img"><img src="icon/point.svg"></div> -->
+                            </div>
+                            <span class="fS gray">2022/01/11</span>
+                        </div>
+                        <div class="icon minor"><i class="fa-solid fa-chevron-right"></i></div>
+                    </a>
+                    <div class="lineH"></div>
+                    <a class="record flexH width between margin" onclick="popDetail_event()">
+                        <div class="flexV width">
+                            <span class="fM">問答任務</span>
+                            <span class="fS gray">任務名稱</span>
+                        </div>
+                        <div class="flexV end">
+                            <div class="flexH">
+                                <span class="fM bold success">+130</span>
+                                <!-- <div class="img"><img src="icon/point.svg"></div> -->
+                            </div>
+                            <span class="fS gray">2022/01/11</span>
+                        </div>
+                        <div class="icon minor"><i class="fa-solid fa-chevron-right"></i></div>
+                    </a>
+                    <div class="lineH"></div>
+                    <a class="record flexH width between margin" onclick="popDetail()">
+                        <div class="flexV width">
+                            <span class="fM">點數折抵</span>
+                            <span class="fS gray">快一點餐廳</span>
+                        </div>
+                        <div class="flexV end">
+                            <div class="flexH">
+                                <span class="fM bold error">-130</span>
+                                <!-- <div class="img"><img src="icon/point.svg"></div> -->
+                            </div>
+                            <span class="fS gray">2022/01/11</span>
+                        </div>
+                        <div class="icon minor"><i class="fa-solid fa-chevron-right"></i></div>
+                    </a>
+                    <div class="lineH"></div>
+                    <a class="record flexH width between margin" onclick="popDetail_event()">
+                        <div class="flexV width">
+                            <span class="fM">問答任務</span>
+                            <span class="fS gray">任務名稱</span>
+                        </div>
+                        <div class="flexV end">
+                            <div class="flexH">
+                                <span class="fM bold success">+130</span>
+                                <!-- <div class="img"><img src="icon/point.svg"></div> -->
+                            </div>
+                            <span class="fS gray">2022/01/11</span>
+                        </div>
+                        <div class="icon minor"><i class="fa-solid fa-chevron-right"></i></div>
+                    </a>
+                    <div class="lineH"></div>
+                </div>
+            </section>
+            <section class="footer point_history">
+                <a class="icon iconButton active" href="index.html">
+                    <img src="icon/home.svg">
+                    <img src="icon/home-a.svg">
+                    <span class="fS white">首頁</span>
+                </a>
+                <a class="icon iconButton" href="service.html">
+                    <img src="icon/service.svg">
+                    <img src="icon/service-a.svg">
+                    <span class="fS white">市政互動</span>
+                </a>
+                <a class="icon iconButton" href="scan.html">
+                    <img src="icon/scan.svg">
+                    <img src="icon/scan-a.svg">
+                    <span class="fS white">掃碼</span>
+                </a>
+                <a class="icon iconButton" href="discount_stores.html">
+                    <img src="icon/store.svg">
+                    <img src="icon/store-a.svg">
+                    <span class="fS white">優惠地圖</span>
+                </a>
+                <a class="icon iconButton" href="profile.html">
+                    <img src="icon/user.svg">
+                    <img src="icon/user-a.svg">
+                    <span class="fS white">會員</span>
+                </a>
+                <!-- <a class="button rounded" href="scan.html">
+                    <div class="icon"><img src="icon/scanner.svg"></div>
+                    <span class="fM">使用紅利點數</span>
+                </a> -->
+            </section>
+            <!-- Popup (下拉選單) -->
+            <section id="popDropdown" class="popup popDropdown">
+                <div class="popBody">
+                    <a class="close"><i class="fas fa-times"></i></a>
+                    <section class="popHeader">
+                        <span class="fL">類型</span>
+                    </section>
+                    <section class="popMain">
+                        <a class="active">
+                            <span>全部類型</span>
+                        </a>
+                        <a>
+                            <span>獲得點數</span>
+                        </a>
+                        <a>
+                            <span>點數消費</span>
+                        </a>
+                    </section>
+                </div>
+            </section>
+            <!-- Popup (時間區間) -->
+            <section id="popTime" class="popup popTime point_history">
+                <div class="popBody">
+                    <a class="close"><i class="fas fa-times"></i></a>
+                    <section class="popHeader">
+                        <span class="fL">時間區間</span>
+                    </section>
+                    <section class="popMain">
+                        <!-- Tabs -->
+                        <div class="tabs rounded fS">
+                            <a class="tab rounded">
+                                <span>近一天</span>
+                            </a>
+                            <a class="tab rounded active">
+                                <span>近一週</span>
+                            </a>
+                            <a class="tab rounded">
+                                <span>近一個月</span>
+                            </a>
+                            <a class="tab rounded">
+                                <span>自訂時間</span>
+                            </a>
+                        </div>
+                        <!-- Date -->
+                        <div class="input rounded"> <!-- class: fake / error -->
+                            <input class="fM date" type="date" name="startDate">
+                            <!-- <input class="fM time" type="time" name="startTime"> -->
+                            <span class="fL">-</span>
+                            <input class="fM date" type="date" name="endDate">
+                        </div>
+                    </section>
+                    <section class="popFooter">
+                        <a class="button rounded cancel white"><span class="fM">取消</span></a>
+                        <a class="button rounded submit"><span class="fM">確認</span></a>
+                    </section>
+                </div>
+            </section>
+            <!-- Popup (活動點數明細) -->
+            <section id="popDetail_event" class="popup popDetail point_history" onclick="popClose(this)">
+                <div class="popBody">
+                    <a class="close" onclick="popClose(this)"><i class="fas fa-times"></i></a>
+                    <section class="popHeader">
+                        <span class="fL">活動點數明細</span>
+                    </section>
+                    <section class="popMain">
+                        <div class="flexH width middle get">
+                            <div class="img"><img src="img/bg-w-store.png"></div>
+                            <div class="flexV width">
+                                <span class="fS">已獲得</span>
+                                <span class="fXL bold success">NT$130</span>
+                            </div>
+                            <div class="flexV end place">
+                                <span class="fS width top">可用場所</span>
+                                <span class="fS width">餐廳</span>
+                            </div>
+                        </div>
+                        <div class="lineH"></div>
+                        <div class="flexH width between">
+                            <span class="fM gray">交易時間</span>
+                            <span class="fM">2022/01/01 15:00</span>
+                        </div>
+                        <div class="flexH width between">
+                            <span class="fM gray">美食券</span>
+                            <span class="fM">130</span>
+                        </div>
+                        <div class="lineH"></div>
+                        <div class="flexV width between">
+                            <span class="fS gray width">活動項目</span>
+                            <span class="fM width">2023/10月萬聖節店家限定</span>
+                        </div>
+                        <div class="flexV width between">
+                            <span class="fS gray width">活動期限</span>
+                            <span class="fM width">2023/10/16 ~ 2023/12/16</span>
+                        </div>
+                        <div class="flexV width between">
+                            <span class="fS gray width">活動點數說明</span>
+                            <span class="fM width">會員完成購物後會獲得的紅利點數回饋，可用於下次消費折抵，每10點可折抵$1. 紅利點數累積方式·. 於韓秀姬官網/APP購買商品，每筆訂單可享10%紅利點數回饋。</span>
+                        </div>
+                        <div class="flexV width between">
+                            <span class="fS gray width">活動單位</span>
+                            <span class="fM width">公司名稱公司名稱公司名稱公司名稱</span>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <!-- Popup (消費折抵明細) -->
+            <section id="popDetail" class="popup popDetail point_history" onclick="popClose(this)">
+                <div class="popBody">
+                    <a class="close" onclick="popClose(this)"><i class="fas fa-times"></i></a>
+                    <section class="popHeader">
+                        <span class="fL">消費折抵明細</span>
+                    </section>
+                    <section class="popMain">
+                        <div class="flexH width middle cost">
+                            <span class="fXL bold">NT$130</span>
+                            <img src="img/favicon.svg">
+                            <span class="fXL bold primary">130</span>
+                        </div>
+                        <div class="flexH width between">
+                            <span class="fM gray">交易時間</span>
+                            <span class="fM">2022/01/01 15:00</span>
+                        </div>
+                        <div class="flexH width between">
+                            <div class="img store_type"><img src="icon/p-taiwanpay.svg"></div>
+                            <span class="fM gray width">美食券</span>
+                            <span class="fM">100</span>
+                        </div>
+                        <div class="flexH width between">
+                            <div class="img store_type"><img src="icon/p-taiwanpay.svg"></div>
+                            <span class="fM gray width">早餐點</span>
+                            <span class="fM">30</span>
+                        </div>
+                        <div class="flexH width between">
+                            <div class="img store_type"><img src="img/favicon.svg"></div>
+                            <span class="fM gray width">紅利桃子</span>
+                            <span class="fM">130</span>
+                        </div>
+                        <div class="lineH"></div>
+                        <div class="flexV width between">
+                            <span class="fM gray width">已使用場所</span>
+                            <span class="fM width">餐廳（歐8韓式炸雞-信義店）</span>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+        <!-- Script -->
+        <script src="js/point_history.js"></script>
+    </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="桃園紅利桃子">
+        <meta name="description" content="桃園紅利桃子">
+        <meta name="author" content="桃園紅利桃子">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <title>桃園紅利桃子</title>
+        <link rel="icon" type="image/png" href="img/logo.png"/>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/unique.css">
+        <!-- Awesome Icon -->
+        <link href="fontawesome-free-6.1.1-web/css/all.css" rel="stylesheet">
+    </head>
+    <body class="marginX">
+        <div class="body fixed mobile"> <!-- class: fixed, mobile -->
+            <!-- Loading Spinner -->
+            <!-- <div class="spinner"><div><div></div></div></div> -->
+            <!-- Header -->
+            <section class="header code">
+                <a class="icon iconButton third" href="javascript:history.back()">
+                    <i class="fa-solid fa-chevron-left fa-lg"></i>
+                </a>
+                <span class="fL">設定交易密碼</span>
+                <div class="icon iconButton"></div>
+            </section>
+            <!-- Main -->
+            <section class="main code">
+                <div class="info flexV width">
+                    <div class="code flexH width middle">
+                        <div class="dot active"><div></div></div>
+                        <div class="dot active"><div></div></div>
+                        <div class="dot active"><div></div></div>
+                        <div class="dot"><div></div></div>
+                        <div class="dot"><div></div></div>
+                        <div class="dot"><div></div></div>
+                    </div>
+                    <div class="number flexV width">
+                        <div class="flexH width">
+                            <a class="flexH width middle margin background rounded">
+                                <span class="fXL">1</span>
+                            </a>
+                            <a class="flexH width middle margin background rounded">
+                                <span class="fXL">2</span>
+                            </a>
+                            <a class="flexH width middle margin background rounded">
+                                <span class="fXL">3</span>
+                            </a>
+                        </div>
+                        <div class="flexH width">
+                            <a class="flexH width middle margin background rounded">
+                                <span class="fXL">4</span>
+                            </a>
+                            <a class="flexH width middle margin background rounded">
+                                <span class="fXL">5</span>
+                            </a>
+                            <a class="flexH width middle margin background rounded">
+                                <span class="fXL">6</span>
+                            </a>
+                        </div>
+                        <div class="flexH width">
+                            <a class="flexH width middle margin background rounded">
+                                <span class="fXL">7</span>
+                            </a>
+                            <a class="flexH width middle margin background rounded">
+                                <span class="fXL">8</span>
+                            </a>
+                            <a class="flexH width middle margin background rounded" onclick="popNotice()"> <!-- Popup (餘額不足) -->
+                                <span class="fXL">9</span>
+                            </a>
+                        </div>
+                        <div class="flexH width">
+                            <a class="flexH width middle margin" onclick="popNone()">
+                                <span class="fM gray">清除</span>
+                            </a>
+                            <a class="flexH width middle margin background rounded" href="point_success.html">
+                                <span class="fXL">0</span>
+                            </a>
+                            <a class="flexH width middle margin" onclick="popWrong()">
+                                <i class="gray fa-solid fa-delete-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flexH width">
+                        <a class="button rounded secondary" href="javascript:history.back()"">
+                            <span class="fM">上一步</span>
+                        </a>
+                        <a class="button rounded" href="index.html">
+                            <span class="fM">送出</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

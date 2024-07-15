@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="桃園紅利桃子">
+        <meta name="description" content="桃園紅利桃子">
+        <meta name="author" content="桃園紅利桃子">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <title>桃園紅利桃子</title>
+        <link rel="icon" type="image/png" href="img/logo.png"/>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/unique.css">
+        <!-- Awesome Icon -->
+        <link href="fontawesome-free-6.1.1-web/css/all.css" rel="stylesheet">
+    </head>
+    <body class="marginX">
+        <div class="body fixed mobile"> <!-- class: fixed, mobile -->
+            <!-- Loading Spinner -->
+            <!-- <div class="spinner"><div><div></div></div></div> -->
+            <!-- Header -->
+            <section class="header activity">
+                <!-- Left -->
+                <div class="flexH width">
+                    <a class="icon iconButton third" href="javascript:history.back()">
+                        <i class="fa-solid fa-chevron-left fa-lg"></i>
+                    </a>
+                </div>
+                <span class="fL nowrap">專屬任務</span>
+                <!-- Right -->
+                <div class="flexH width right">
+                    <a class="textButton fM third" href="activity_history.html">獲獎紀錄</a>
+                </div>
+            </section>
+            <!-- Main -->
+            <section class="main activity">
+                <!-- 任務 -->
+                <!-- <div class="mission flexH width">
+                    <a class="flexV center width disabled">
+                        <img src="icon/checkin.svg">
+                        <span class="fM">每日簽到</span>
+                    </a>
+                    <a class="flexV center width disabled">
+                        <img src="icon/game.svg">
+                        <span class="fM">小遊戲</span>
+                    </a>
+                    <a class="flexV center width" href="video.html">
+                        <img src="icon/video.svg">
+                        <span class="fM">看影片</span>
+                    </a>
+                    <a class="flexV center width" href="activity_question.html">
+                        <img src="icon/question.svg">
+                        <span class="fM">問答</span>
+                    </a>
+                </div> -->
+                <!-- Tabs -->
+                <!-- <div class="tabs line fM">
+                    <a class="tab active">
+                        <span>最新任務</span>
+                    </a>
+                    <span class="secondary">|</span>
+                    <a class="tab">
+                        <span>迎新任務</span>
+                    </a>
+                    <span class="secondary">|</span>
+                    <a class="tab" onclick="popActivity()">
+                        <span>問卷任務</span>
+                    </a>
+                </div> -->
+                <!-- 最新任務 -->
+                <a class="news flexV width margin" href="activity_detail.html">
+                    <div class="flexH width between">
+                        <div class="info flexV padding margin height">
+                            <span class="fM title">消費次數</span>
+                            <span class="fS double">完成帳號註冊，填寫對應資料，即可免費獲得100點紅利桃子！</span>
+                            <span class="fXS gray">2022/01/01 - 2022/12/31</span>
+                        </div>
+                        <div class="reward flexV padding margin center middle">
+                            <!-- 即將發完 -->
+                            <div class="label soon">
+                                <span class="fS single orange">即將發完</span>
+                            </div>
+                            <div class="img"><img src="icon/point.svg"></div>
+                            <span class="fM primary">100點/次</span>
+                            <!-- (舊版)已完成 -->
+                            <!-- <div class="done flexV center middle">
+                                <div class="icon white"><i class="fa-regular fa-circle-check fa-2x"></i></div>
+                            </div> -->
+                            <!-- (舊版)已領完 -->
+                            <!-- <div class="over flexV center middle">
+                                <span class="fM white">已領完</span>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="progress flexH width padding margin ">
+                        <span class="fM bold primary">3/5</span>
+                        <div class="bar flexH width rounded">
+                            <div></div>
+                        </div>
+                    </div>
+                </a>
+                <a class="news flexV width margin" href="activity_detail.html">
+                    <div class="flexH width between">
+                        <div class="info flexV padding margin height">
+                            <span class="fM title">消費次數</span>
+                            <span class="fS double">完成帳號註冊，填寫對應資料，即可免費獲得100點紅利桃子！</span>
+                            <span class="fXS gray">2022/01/01 - 2022/12/31</span>
+                        </div>
+                        <div class="reward flexV padding margin center middle">
+                            <div class="img"><img src="icon/point.svg"></div>
+                            <span class="fM primary">100點/次</span>
+                        </div>
+                    </div>
+                    <!-- <div class="progress flexH width padding margin ">
+                        <span class="fM bold primary">3/5</span>
+                        <div class="bar flexH width rounded">
+                            <div></div>
+                        </div>
+                    </div> -->
+                </a>
+                <a class="news flexV width margin" href="activity_detail.html">
+                    <div class="flexH width between">
+                        <div class="info flexV padding margin height">
+                            <span class="fM title">消費次數</span>
+                            <span class="fS double">完成帳號註冊，填寫對應資料，即可免費獲得100點紅利桃子！</span>
+                            <span class="fXS gray">2022/01/01 - 2022/12/31</span>
+                        </div>
+                        <div class="reward flexV padding margin center middle">
+                            <div class="img"><img src="icon/point.svg"></div>
+                            <span class="fM primary">100點/次</span>
+                            <!-- 已領取 -->
+                            <div class="label absolute">
+                                <div class="icon"><i class="fa-regular fa-check"></i></div>
+                                <span class="fS single">已領取</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress flexH width padding margin ">
+                        <span class="fM bold primary">3/5</span>
+                        <div class="bar flexH width rounded">
+                            <div></div>
+                        </div>
+                    </div>
+                </a>
+                <a class="news flexV width margin" href="activity_detail.html">
+                    <div class="flexH width between">
+                        <div class="info flexV padding margin height">
+                            <span class="fM title">消費次數</span>
+                            <span class="fS double">完成帳號註冊，填寫對應資料，即可免費獲得100點紅利桃子！</span>
+                            <span class="fXS gray">2022/01/01 - 2022/12/31</span>
+                        </div>
+                        <div class="reward flexV padding margin center middle">
+                            <div class="img"><img src="icon/point.svg"></div>
+                            <span class="fM primary">100點/次</span>
+                            <!-- 已發完 -->
+                            <div class="label absolute gray">
+                                <span class="fS single gray">已發完</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress flexH width padding margin ">
+                        <span class="fM bold primary">3/5</span>
+                        <div class="bar flexH width rounded">
+                            <div></div>
+                        </div>
+                    </div>
+                </a>
+            </section>
+            <!-- Footer -->
+            <section class="footer">
+                <a class="icon iconButton active" href="index.html">
+                    <img src="icon/home.svg">
+                    <img src="icon/home-a.svg">
+                    <span class="fS white">首頁</span>
+                </a>
+                <a class="icon iconButton" href="service.html">
+                    <img src="icon/service.svg">
+                    <img src="icon/service-a.svg">
+                    <span class="fS white">市政互動</span>
+                </a>
+                <a class="icon iconButton" href="scan.html">
+                    <img src="icon/scan.svg">
+                    <img src="icon/scan-a.svg">
+                    <span class="fS white">掃碼</span>
+                </a>
+                <a class="icon iconButton" href="discount_stores.html">
+                    <img src="icon/store.svg">
+                    <img src="icon/store-a.svg">
+                    <span class="fS white">優惠地圖</span>
+                </a>
+                <a class="icon iconButton" href="profile.html">
+                    <img src="icon/user.svg">
+                    <img src="icon/user-a.svg">
+                    <span class="fS white">會員</span>
+                </a>
+            </section>
+        </div>
+    </body>
+</html>

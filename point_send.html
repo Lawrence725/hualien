@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="桃園紅利桃子">
+        <meta name="description" content="桃園紅利桃子">
+        <meta name="author" content="桃園紅利桃子">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <title>桃園紅利桃子</title>
+        <link rel="icon" type="image/png" href="img/logo.png"/>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/unique.css">
+        <!-- Awesome Icon -->
+        <link href="fontawesome-free-6.1.1-web/css/all.css" rel="stylesheet">
+    </head>
+    <body class="marginX">
+        <div class="body fixed mobile"> <!-- class: fixed, mobile -->
+            <!-- Loading Spinner -->
+            <!-- <div class="spinner"><div><div></div></div></div> -->
+            <!-- Header -->
+            <section class="header scan_point">
+                <a class="icon iconButton third" href="scan.html">
+                    <i class="fa-solid fa-chevron-left fa-lg"></i>
+                </a>
+                <span class="fL">店家名稱</span>
+                <div class="icon iconButton"></div>
+            </section>
+            <!-- Main -->
+            <section class="main scan_point">
+                <!-- Tabs -->
+                <div class="tabs line fM rounded">
+                    <a class="tab flexV width center active" href="point_send.html">
+                        <span class="fS">紅利桃子</span>
+                        <div class="flexH">
+                            <div class="img point"><img src="icon/point.svg"></div>
+                            <span class="fM bold">500</span>
+                        </div>
+                    </a>
+                    <div class="lineV"></div>
+                    <a class="tab flexV width center" href="scan_tickets.html">
+                        <span class="fS">優惠券</span>
+                        <div class="flexH">
+                            <img src="icon/ticket-on.svg">
+                            <span class="fM bold">5</span>
+                        </div>
+                    </a>
+                    <!-- <div class="lineV"></div>
+                    <a class="tab flexV width center deactive" href="scan_stamps.html">
+                        <span class="fS">集章</span>
+                        <div class="flexH">
+                            <img src="icon/stamp-on.svg">
+                            <span class="fM bold">未啟用</span>
+                        </div>
+                    </a> -->
+                </div>
+                <div class="info flexV width">
+                    <div class="content flexV width center">
+                        <span class="fM gray">您即將支付</span>
+                        <div class="total flexH width rounded middle padding margin background">
+                            <div class="img"><img src="icon/point.svg"></div>
+                            <span class="fXL">100</span>
+                        </div>
+                        <div class="hint flexH between">
+                            <div class="flexH width">
+                                <!-- 餘額不足提示 -->
+                                <!-- <span class="fS error">餘額不足</span> -->
+                            </div>
+                            <span class="fS gray">給</span>
+                            <div class="flexH width right">
+                                <div class="img"><img src="icon/point.svg"></div>
+                                <span class="fS gray">1 = NT$1</span>
+                            </div>
+                        </div>
+                        <span class="fL gray">桃園美味麵食店</span>
+                    </div>
+                    <div class="number flexV width">
+                        <div class="flexH width">
+                            <a class="flexH width middle margin background rounded">
+                                <span class="fXL">1</span>
+                            </a>
+                            <a class="flexH width middle margin background rounded">
+                                <span class="fXL">2</span>
+                            </a>
+                            <a class="flexH width middle margin background rounded">
+                                <span class="fXL">3</span>
+                            </a>
+                        </div>
+                        <div class="flexH width">
+                            <a class="flexH width middle margin background rounded">
+                                <span class="fXL">4</span>
+                            </a>
+                            <a class="flexH width middle margin background rounded">
+                                <span class="fXL">5</span>
+                            </a>
+                            <a class="flexH width middle margin background rounded">
+                                <span class="fXL">6</span>
+                            </a>
+                        </div>
+                        <div class="flexH width">
+                            <a class="flexH width middle margin background rounded" onclick="popConfirm()">
+                                <span class="fXL">7</span>
+                            </a>
+                            <a class="flexH width middle margin background rounded">
+                                <span class="fXL">8</span>
+                            </a>
+                            <a class="flexH width middle margin background rounded" onclick="popNotice()"> <!-- Popup (餘額不足) -->
+                                <span class="fXL">9</span>
+                            </a>
+                        </div>
+                        <div class="flexH width">
+                            <a class="flexH width middle margin">
+                                <span class="fM gray">清除</span>
+                            </a>
+                            <a class="flexH width middle margin background rounded">
+                                <span class="fXL">0</span>
+                            </a>
+                            <a class="flexH width middle margin">
+                                <i class="gray fa-solid fa-delete-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <a class="button rounded" href="point_code.html">
+                        <span class="fM">確認送出</span>
+                    </a>
+                </div>
+            </section>
+            <!-- Popup (餘額不足) -->
+            <section id="popNotice" class="popup">
+                <div class="popBody">
+                    <a class="close"><i class="fas fa-times"></i></a>
+                    <section class="popHeader">
+                        <!-- <span class="fL">Title</span> -->
+                    </section>
+                    <section class="popMain">
+                        <div class="icon"><i class="fa-solid fa-triangle-exclamation fa-2x"></i></div>
+                        <span class="fL">餘額不足</span>
+                    </section>
+                    <section class="popFooter">
+                        <a class="button submit rounded"><span class="fM">確認</span></a>
+                    </section>
+                </div>
+            </section>
+            <!-- Popup (Confirm) -->
+            <section id="popConfirm" class="popup scan_point popConfirm" onclick="popClose(this)">
+                <div class="popBody">
+                    <a class="close" onclick="popClose(this)">
+                        <i class="fas fa-times"></i>
+                    </a>
+                    <section class="popMain">
+                        <span class="fM gray">您即將支付</span>
+                        <div class="total flexH width rounded middle padding margin background">
+                            <div class="img"><img src="icon/point.svg"></div>
+                            <span class="fXL">100</span>
+                        </div>
+                        <span class="fS gray">給</span>
+                        <span class="fL gray">桃園美味麵食店</span>
+                    </section>
+                    <section class="popFooter">
+                        <a class="button rounded white" onclick="popClose(this)">
+                            <span class="fM">取消</span>
+                        </a>
+                        <a class="button rounded" href="point_success.html">
+                            <span class="fM">確認送出</span>
+                        </a>
+                    </section>
+                </div>
+            </section>
+        </div>
+        <!-- Script -->
+        <script>
+            // Popup close
+            function popClose(e) {
+                if (e.classList.contains('popup'))
+                    window.onclick  = function(event) {
+                        if (event.target == e)
+                            e.style.display = "none"; }
+                else if (!(e.classList.contains('popBody')))
+                    e.closest('.popup').style.display = "none";
+                document.body.style.overflow = "scroll"; }
+            // Popup (Confirm)
+            function popConfirm() {
+                document.getElementById("popConfirm").style.display = "flex";
+                document.body.style.overflow = "hidden"; }
+            // Popup (餘額不足)
+            function popNotice() {
+                var popNotice   = document.getElementById("popNotice");
+                var close       = popNotice.getElementsByClassName("close")[0];
+                var submit      = popNotice.getElementsByClassName("submit")[0];
+                close.onclick   = function() { popClose(); }
+                submit.onclick  = function() { popClose(); }
+                window.onclick  = function(event) { if (event.target == popNotice) { popClose(); }}
+                function popClose() { 
+                    popNotice.style.display         = "none";
+                    document.body.style.overflow    = "scroll"; }
+                popNotice.style.display             = "flex";
+                document.body.style.overflow        = "hidden"; }
+        </script>
+    </body>
+</html>
